@@ -1,7 +1,12 @@
-import readline from 'readline';
+var readline = require('readline');
+var fs = require('fs');
 
-var score = parseInt(readLine(), 10)
-if (score >= 88) console.log("excellent");
-    else if (score >= 40 && score < 88)
-        console.log("good");
-    else console.log("fail");
+var myInterface = readline.createInterface({
+  input: fs.createReadStream('demofile1.html')
+});
+
+var lineno = 0;
+myInterface.on('line', function (line) {
+  lineno++;
+  console.log('Line number ' + lineno + ': ' + line);
+});
