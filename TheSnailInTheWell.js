@@ -1,3 +1,6 @@
+    
+    //apply command "npm install prompt-sync" if prompt-sync not installed.
+
     const prompt = require('prompt-sync')({sigint: true});
 
 
