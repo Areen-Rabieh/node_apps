@@ -31,22 +31,7 @@
     let days = 0;           //initialize output variable "days" 
 
 
-    // for (let i = 0; depth >= 5; i++) 
-    // {
-    //     depth = depth - 5;
-    //     days++;
-
-    //   }
-
-
-    // if (depth >= 2.5)
-    // {
-    //     days++
-    // }
-
     days = (depth/5).toFixed(0);
-    
-    
     
     console.log("days = ",days);
 
